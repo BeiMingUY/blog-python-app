@@ -539,7 +539,7 @@ class _TransactionCtx(object):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
-    create_engine('www-data', 'www-data', 'test', '192.168.10.128')
+    create_engine('root', '123456', 'test', '192.168.65.1')
     update('drop table if exists user')
     update('create table user (id int primary key, name text, email text, passwd text, last_modified real)')
     import doctest
