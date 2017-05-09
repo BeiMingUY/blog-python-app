@@ -1,0 +1,6 @@
+修改本地uuid 
+
+使用数据库编辑软件工具 SQLiteSpy编辑数据库文件 目录：.svn/wc.db 
+sql语句； select * from REPOSITORY;
+sql语句 update REPOSITORY set uuid="xxx-xxx-xxx-xxx" where id=1; 
+最后使用select * from REPOSITORY; 查看是否为修改后的值。
